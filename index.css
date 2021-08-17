@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0.5em;
+    font-family: Calibri, sans-serrif;
+    min-width: 450px;
+    min-height: 100px;
+    height: 100vh;
+    box-sizing: border-box;
+    background: #f5f5f5;
+    animation-name: pull-in;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+input{
+    font-size: 0.8rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0.5em;
+    border: 1px solid green;
+    height: 2em;
+}
+
+#saveData, #saveTab{
+    transition: 0.2s;
+    width: 20%;
+    font-size: 0.8rem;
+    color: black;
+    margin: 0.5em 0;
+    font-weight: 600;
+    background-color: greenyellow;   
+    padding: 0.4em 0.6em;
+    border-radius: 2px;
+    border: 2px solid black;
+    margin-right: 1em;
+
+}
+
+#saveTab:hover, #saveData:hover{
+    transform: scale(1.04);
+    background:#ccff7e;
+}
+
+#delete{
+    transition: 0.2s;
+    width: 24%;
+    font-size: 0.8rem;
+    color: greenyellow;
+    margin: 0.5em 0;
+    font-weight: 600;
+    background-color:black;   
+    padding: 0.4em 0.6em;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+
+#delete:hover{
+    transform: scale(1.0125);
+    background: #3d3d3d;
+}
+
+@keyframes pull-in {
+	0% {transform: translateX(-100em);}
+	100% {transform: translateX(0em);}
+
+}
+
+ul{
+    list-style: none;
+    font-weight: 500;
+    color:black;
+    padding-left: 0;
+}
+
+li{
+    font-weight: 500;
+}
+
+a{
+    color: green;
+    font-size: 1.25em;
+    left: 0px;
+}
